@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Watches and updates protection settings in repositories' branches
+Resources:
+  BranchProtectionFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Description: Watches and updates protection settings in repositories' branches
+      CodeUri: ./deploy.zip
+      Handler: dist/index.handler
+      MemorySize: 128
+      Runtime: nodejs6.10
+      Timeout: 10
+      Policies:
+        - AWSLambdaBasicExecutionRole

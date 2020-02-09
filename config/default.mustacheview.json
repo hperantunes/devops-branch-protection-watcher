@@ -1,0 +1,4 @@
+{
+  "awsRegion": "{{awsRegion}}",
+  "awsTestRole": "{{{awsTestRole}}}"
+}
