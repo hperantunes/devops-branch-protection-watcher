@@ -23,7 +23,7 @@
     "got": "7.0.0",
     "parse-link-header": "1.0.1",
     "query-string": "4.3.4",
-    "url-parse": "1.1.9"
+    "url-parse": "1.4.3"
   },
   "devDependencies": {
     "@types/chai": "4.0.0",
